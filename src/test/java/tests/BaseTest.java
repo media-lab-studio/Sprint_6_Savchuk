@@ -3,7 +3,7 @@ package tests;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public abstract class BaseTest {
 
@@ -11,7 +11,7 @@ public abstract class BaseTest {
 
     @BeforeEach
     public void setUp() {
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
 
