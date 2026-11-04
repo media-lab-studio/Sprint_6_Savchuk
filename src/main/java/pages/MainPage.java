@@ -13,6 +13,7 @@ public class MainPage extends BasePage {
         super(driver);
     }
 
+    // Главная страница сервиса «Яндекс.Самокат»
     public static final String BASE_URL = "https://qa-scooter.education-services.ru/";
 
     // ======================================== Локаторы элементов страницы ============================================
