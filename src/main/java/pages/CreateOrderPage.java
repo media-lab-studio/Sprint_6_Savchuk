@@ -251,6 +251,8 @@ public class CreateOrderPage extends BasePage {
 
     /**
      * Получить текст ошибки для поля "Имя".
+     *
+     * @return текст ошибки
      */
     public String getNameErrorMessage() {
         String errorText = wait.until(ExpectedConditions.elementToBeClickable(nameErrorMessage)).getText();
@@ -260,6 +262,8 @@ public class CreateOrderPage extends BasePage {
 
     /**
      * Получить текст ошибки для поля "Фамилия".
+     *
+     * @return текст ошибки
      */
     public String getSurnameErrorMessage() {
         String errorText = wait.until(ExpectedConditions.elementToBeClickable(surnameErrorMessage)).getText();
@@ -269,6 +273,8 @@ public class CreateOrderPage extends BasePage {
 
     /**
      * Получить текст ошибки для поля "Адрес".
+     *
+     * @return текст ошибки
      */
     public String getAddressErrorMessage() {
         String errorText = wait.until(ExpectedConditions.elementToBeClickable(addressErrorMessage)).getText();
@@ -278,6 +284,8 @@ public class CreateOrderPage extends BasePage {
 
     /**
      * Получить текст ошибки для поля "Телефон".
+     *
+     * @return текст ошибки
      */
     public String getPhoneErrorMessage() {
         String errorText = wait.until(ExpectedConditions.elementToBeClickable(phoneErrorMessage)).getText();

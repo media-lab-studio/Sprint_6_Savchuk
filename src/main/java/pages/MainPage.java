@@ -43,14 +43,6 @@ public class MainPage extends BasePage {
     }
 
     /**
-     * Открыть главную страницу сервиса «Яндекс.Самокат».
-     */
-    public void openUrl(String url) {
-        System.out.println("URL страницы: " + url);
-        driver.get(url);
-    }
-
-    /**
      * Закрыть баннер согласия на использование куки, если он появился.
      */
     public MainPage closeCookieConsent() {
@@ -120,8 +112,6 @@ public class MainPage extends BasePage {
 
     /**
      * Проверить, отображается ли секция "Вопросы о важном".
-     *
-     * @return true если секция отображается
      */
     public MainPage waitForFaqSection() {
         scrollToBottom();

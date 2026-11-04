@@ -19,10 +19,10 @@ public abstract class BasePage {
     /**
      * Открыть страницу с заданным url
      *
-     * @param url url страницы
+     * @param url страницы
      */
     public void openUrl(String url) {
-        System.out.println("Открывается главная страница: " + url);
+        System.out.println("Открывается страница с URL: " + url);
         driver.get(url);
     }
 
