@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.TestInfo;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public abstract class BaseTest {
 
@@ -12,7 +13,12 @@ public abstract class BaseTest {
 
     @BeforeEach
     public void setUp() {
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        if (Boolean.getBoolean("headless")) {
+            options.addArguments("--headless=new", "--no-sandbox",
+                    "--disable-dev-shm-usage", "--window-size=1920,1080");
+        }
+        driver = new ChromeDriver(options);
         driver.manage().window().maximize();
     }
 
