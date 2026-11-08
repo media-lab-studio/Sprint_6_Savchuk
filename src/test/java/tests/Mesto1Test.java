@@ -12,8 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class Mesto1Test {
 
-    private String bearerToken;
-    private String MESTO_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YWYwMjNiOTgyZDhjZTU0NWE4YjVmNGUiLCJpYXQiOjE3OTQxMjI3MDAsImV4cCI6MTc5NDcyNzUwMH0.claP4zhk1wrTss8kIcm1m3uLzm_Vw_0pEIwglgWU8FU";
+//    private String bearerToken;
 
     @BeforeEach
     public void setUp() {
